@@ -33,5 +33,8 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  // ルート("/")と、対応言語配下のパス("/ja/...", "/en/...")だけを対象にする。
+  // ads.txt/robots.txt/sitemap.xml/画像などの静的ファイルやAPIルートは
+  // このパターンに一致しないため、ミドルウェアに一切巻き込まれない。
+  matcher: ["/", "/(ja|en)/:path*"],
 };
