@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { buildAlternates } from "@/lib/alternates";
+import { GA_MEASUREMENT_ID } from "@/lib/site-config";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import "../globals.css";
 
@@ -107,6 +109,7 @@ export default async function LocaleLayout({
             <p className="mt-1">{t("footer.copyright", { year: new Date().getFullYear(), name: t("site.name") })}</p>
           </footer>
         </NextIntlClientProvider>
+        {GA_MEASUREMENT_ID && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
       </body>
     </html>
   );

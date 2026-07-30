@@ -32,6 +32,11 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
       </section>
 
       <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-semibold">{t("analyticsTitle")}</h2>
+        <p className="leading-relaxed text-zinc-700 dark:text-zinc-300">{t("analyticsBody")}</p>
+      </section>
+
+      <section className="flex flex-col gap-2">
         <h2 className="text-lg font-semibold">{t("adsTitle")}</h2>
         <p className="leading-relaxed text-zinc-700 dark:text-zinc-300">{t("adsBody")}</p>
       </section>
