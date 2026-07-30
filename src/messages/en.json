@@ -1,0 +1,134 @@
+{
+  "site": {
+    "name": "What To Play Today?",
+    "title": "What To Play Today? | Find a Steam game to play right now",
+    "description": "Pick your group size (solo or with friends), today's mood, how much time you have, and your budget — get 5 Steam game picks for right now. You can also browse and filter the whole list yourself."
+  },
+  "nav": {
+    "quiz": "Find by mood",
+    "browse": "Browse all"
+  },
+  "footer": {
+    "disclaimer": "Prices, images, and game data are fetched from the official Steam API. This is an unofficial fan site and is not affiliated with Valve Corporation.",
+    "copyright": "© {year} {name}",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "home": {
+    "title": "What are we playing today?",
+    "description": "Pick your group size (solo or with friends), mood, time, and budget — get 5 Steam game picks for today.\nPrefer to browse yourself? There's a filterable list for that too.",
+    "quizCardTitle": "Find by today's mood",
+    "quizCardDesc": "Answer 4 quick questions and get 5 picks instantly.",
+    "browseCardTitle": "Browse and filter yourself",
+    "browseCardDesc": "Mix and match player count, mood, and budget with checkboxes to explore the full list.",
+    "moodTagsLabel": "Mood tags:",
+    "gameCount": "{count} games in the catalog right now (growing automatically)"
+  },
+  "quiz": {
+    "stepPlayers": "How many are playing?",
+    "stepMood": "What's today's mood?",
+    "stepTime": "How much time do you have?",
+    "stepBudget": "What's your budget?",
+    "back": "← Back",
+    "stepCounter": "{current} / {total}"
+  },
+  "mood": {
+    "laugh": "Laughs",
+    "scary": "Scary",
+    "brain": "Brainy",
+    "chill": "Chill"
+  },
+  "players": {
+    "solo": "Solo",
+    "unit": " Players",
+    "orMore": "+ Players"
+  },
+  "time": {
+    "minutesShort": "{n} min",
+    "hoursShort": "{n}h",
+    "within30": "Under 30 min",
+    "within60": "Under 1 hour",
+    "within180": "Under 3 hours"
+  },
+  "budget": {
+    "all": "Any",
+    "free": "Free",
+    "under2000": "Under ¥2,000"
+  },
+  "result": {
+    "changeConditions": "Change conditions",
+    "recommendationsTitle": "Today's top {count} picks",
+    "noResultsTitle": "No games matched those conditions",
+    "noResultsBody": "Try loosening your filters, or <browseLink>browse the full list</browseLink> instead.",
+    "moreLink": "Browse and filter more yourself →",
+    "share": "Share on X",
+    "shareText": "Found 5 great picks to play today ({conditions})!",
+    "copyLink": "Copy link",
+    "linkCopied": "Copied!",
+    "metaTitle": "Top 5 picks to play today ({conditions})",
+    "metaDescription": "{conditions}. Hand-picked Steam games perfect for {players} player(s) to play today."
+  },
+  "browse": {
+    "pageTitle": "Browse and filter",
+    "pageDescription": "Mix and match player count, mood, session length, and budget with checkboxes to explore the full list of playable Steam games.",
+    "heading": "Browse all",
+    "filterPlayers": "Players",
+    "filterMood": "Mood",
+    "filterTime": "Session length",
+    "filterBudget": "Budget",
+    "searchPlaceholder": "Search by game name",
+    "countSuffix": " games",
+    "noResults": "No games matched. Try removing some filters.",
+    "loadMore": "Show more ({count} left)"
+  },
+  "game": {
+    "back": "← Back to list",
+    "unknownPrice": "Price unknown",
+    "sessionMinutes": "~{n} min+",
+    "viewOnSteam": "View on Steam →",
+    "related": "More games for a similar mood",
+    "unverifiedNote": "* Player count and session length are provisional estimates from automated discovery. Check the Steam store page for the actual player count.",
+    "metaTitle": "{name} | Playable with {minPlayers}-{maxPlayers} players",
+    "playersExact": "{n} Players",
+    "playersRange": "{min}-{max} Players"
+  },
+  "about": {
+    "pageTitle": "About This Site",
+    "intro": "\"What To Play Today?\" is an unofficial fan site that helps you decide what Steam game to play today, whether solo or with friends.",
+    "whatTitle": "What does this site do?",
+    "whatBody": "Pick 4 things — how many are playing (1 to 6+), today's mood (laughs, scary, brainy, chill), how much time you have, and your budget — and get 5 matching games. It exists to solve \"there are too many games to choose from.\" If you'd rather browse yourself, there's a checkbox-filterable list for that too.",
+    "dataTitle": "About the games listed",
+    "dataBody": "Games are collected automatically from the official Steam API, and only included if they meet a quality bar of 300+ reviews and a 75%+ positive rating. This surfaces well-regarded mid-size and indie titles, not just the most famous names.",
+    "contactTitle": "Contact",
+    "contactBody": "For feedback or corrections, please use the form below.",
+    "contactFormLabel": "Open contact form →",
+    "contactUnavailable": "A contact form is coming soon."
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy",
+    "intro": "This page explains how \"What To Play Today?\" (\"this site\") handles user information.",
+    "cookieTitle": "Cookies",
+    "cookieBody": "This site uses a cookie (NEXT_LOCALE) to remember your preferred display language. This is the minimum required for that function and does not identify you personally.",
+    "adsTitle": "Advertising",
+    "adsBody": "This site may use third-party advertising, including Google. These vendors may use cookies to serve ads based on a user's prior visits to this site or other sites. You can opt out of personalized advertising at Google Ads Settings (https://adssettings.google.com/).",
+    "dataTitle": "Information we collect",
+    "dataBody": "This site has no account system and does not collect names, email addresses, or other personal information. If analytics cookies or logs are added in the future, this page will be updated accordingly.",
+    "contactTitle": "Contact",
+    "contactBody": "For questions about this policy, please use the form below.",
+    "contactFormLabel": "Open contact form →",
+    "contactUnavailable": "A contact form is coming soon."
+  },
+  "terms": {
+    "pageTitle": "Terms of Use",
+    "intro": "By using \"What To Play Today?\" (\"this site\"), you agree to the following terms.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerBody": "Game information on this site (price, player count, estimated session length, etc.) comes from the official Steam API or from estimates made by the site operator. Accuracy and freshness are not guaranteed — always check the Steam store page before purchasing or playing.",
+    "unofficialTitle": "Unofficial site",
+    "unofficialBody": "This site is an unofficial fan project with no affiliation to Valve Corporation or the rights holders of any game listed. Game titles and images belong to their respective owners.",
+    "liabilityTitle": "Liability",
+    "liabilityBody": "The operator is not liable for any damages arising from the use of this site.",
+    "changesTitle": "Changes to these terms",
+    "changesBody": "These terms may be changed without prior notice."
+  }
+}

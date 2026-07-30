@@ -1,0 +1,134 @@
+{
+  "site": {
+    "name": "今日ナニ遊ぶ？",
+    "title": "今日ナニ遊ぶ？｜今日遊ぶSteamゲームが今すぐ決まる",
+    "description": "人数(ひとりでも、みんなでも)・今日の気分・使える時間・予算を選ぶだけで、今日遊べるSteamゲームを5本だけ提案。自分で条件を絞って探すこともできます。"
+  },
+  "nav": {
+    "quiz": "今日の気分から選ぶ",
+    "browse": "自分で探す"
+  },
+  "footer": {
+    "disclaimer": "価格・画像・ゲーム情報はSteam公式APIより取得しています。本サイトはValve Corporationとは無関係の非公式ファンサイトです。",
+    "copyright": "© {year} {name}",
+    "about": "このサイトについて",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  },
+  "home": {
+    "title": "今日は何を遊ぶ？",
+    "description": "人数(ひとりでも、みんなでも)・気分・時間・予算を選ぶだけで、今日遊べるSteamゲームを5本だけ提案します。\nじっくり自分で条件を絞って探したい人向けの検索も用意しています。",
+    "quizCardTitle": "今日の気分から選ぶ",
+    "quizCardDesc": "4つの質問に答えるだけ。おすすめ5本をすぐ提示します。",
+    "browseCardTitle": "自分で条件を絞って探す",
+    "browseCardDesc": "人数・気分・予算などをチェックボックスで自由に組み合わせて一覧から探せます。",
+    "moodTagsLabel": "気分タグ:",
+    "gameCount": "現在 {count} 本のゲームを収録中（自動で追加予定）"
+  },
+  "quiz": {
+    "stepPlayers": "何人で遊ぶ？",
+    "stepMood": "今日はどんな気分？",
+    "stepTime": "使える時間は？",
+    "stepBudget": "予算は？",
+    "back": "← 戻る",
+    "stepCounter": "{current} / {total}"
+  },
+  "mood": {
+    "laugh": "笑いたい",
+    "scary": "怖い",
+    "brain": "頭使いたい",
+    "chill": "まったり"
+  },
+  "players": {
+    "solo": "1人",
+    "unit": "人",
+    "orMore": "人以上"
+  },
+  "time": {
+    "minutesShort": "{n}分",
+    "hoursShort": "{n}時間",
+    "within30": "30分以内",
+    "within60": "1時間以内",
+    "within180": "3時間以内"
+  },
+  "budget": {
+    "all": "すべて",
+    "free": "無料",
+    "under2000": "2000円以下"
+  },
+  "result": {
+    "changeConditions": "条件を変える",
+    "recommendationsTitle": "今日のおすすめ {count}本",
+    "noResultsTitle": "条件に合うゲームが見つかりませんでした",
+    "noResultsBody": "条件を緩めるか、<browseLink>自分で探す</browseLink>ページから探してみてください。",
+    "moreLink": "もっと自分で条件を絞って探す →",
+    "share": "この結果をXでシェア",
+    "shareText": "{conditions}で今日遊べるおすすめ5本を見つけた！",
+    "copyLink": "リンクをコピー",
+    "linkCopied": "コピーしました",
+    "metaTitle": "{conditions}で今日遊べるおすすめ5本",
+    "metaDescription": "{conditions}。友達{players}人で今日プレイするのにぴったりなSteamゲームを厳選しました。"
+  },
+  "browse": {
+    "pageTitle": "自分で条件を絞って探す",
+    "pageDescription": "人数・気分・プレイ時間・予算をチェックボックスで自由に組み合わせて、遊べるSteamゲームを一覧から探せます。",
+    "heading": "自分で探す",
+    "filterPlayers": "人数",
+    "filterMood": "気分",
+    "filterTime": "プレイ時間",
+    "filterBudget": "予算",
+    "searchPlaceholder": "ゲーム名で検索",
+    "countSuffix": "件",
+    "noResults": "条件に合うゲームが見つかりませんでした。フィルタを減らしてみてください。",
+    "loadMore": "もっと見る（{count}件）"
+  },
+  "game": {
+    "back": "← 一覧に戻る",
+    "unknownPrice": "価格不明",
+    "sessionMinutes": "目安{n}分〜",
+    "viewOnSteam": "Steamストアで見る →",
+    "related": "似た気分で遊べるゲーム",
+    "unverifiedNote": "※ 対応人数・プレイ時間は自動収集による暫定値です。実際の対応人数はSteamストアページでご確認ください。",
+    "metaTitle": "{name}｜{minPlayers}〜{maxPlayers}人で遊べる",
+    "playersExact": "{n}人",
+    "playersRange": "{min}〜{max}人"
+  },
+  "about": {
+    "pageTitle": "このサイトについて",
+    "intro": "「今日ナニ遊ぶ？」は、友達と、あるいは一人で、今日遊ぶSteamゲームを決めるための非公式ファンサイトです。",
+    "whatTitle": "何ができるサイト？",
+    "whatBody": "人数(1人〜6人以上)・今日の気分(笑いたい/怖い/頭使いたい/まったり)・使える時間・予算の4つを選ぶだけで、条件に合うゲームを5本だけ提案します。「候補が多すぎて選べない」を解決するのが目的です。じっくり自分で条件を絞って探したい人向けに、チェックボックス形式の一覧ページも用意しています。",
+    "dataTitle": "掲載しているゲームについて",
+    "dataBody": "掲載ゲームはSteam公式APIから機械的に収集し、レビュー数300件以上・高評価率75%以上という基準を満たしたものだけを掲載しています。有名タイトルだけでなく、実際に評価の高い中堅・インディータイトルも積極的に取り上げています。",
+    "contactTitle": "お問い合わせ",
+    "contactBody": "ご意見・ご指摘はこちらのフォームからご連絡ください。",
+    "contactFormLabel": "お問い合わせフォームを開く →",
+    "contactUnavailable": "現在お問い合わせフォームを準備中です。"
+  },
+  "privacy": {
+    "pageTitle": "プライバシーポリシー",
+    "intro": "本サイト「今日ナニ遊ぶ？」(以下「本サイト」)における、利用者の情報の取り扱いについて説明します。",
+    "cookieTitle": "Cookieについて",
+    "cookieBody": "本サイトは、表示言語の記憶のためにCookie(NEXT_LOCALE)を使用します。これは機能上必要な最小限のものであり、個人を特定する情報は含みません。",
+    "adsTitle": "広告について",
+    "adsBody": "本サイトは、Googleを含む第三者配信事業者による広告を利用する場合があります。これらの事業者はCookieを使用して、ユーザーが本サイトや他のサイトに過去にアクセスした際の情報に基づき広告を配信することがあります。Google広告設定(https://adssettings.google.com/)にて、パーソナライズ広告を無効にすることができます。",
+    "dataTitle": "収集する情報",
+    "dataBody": "本サイトはアカウント登録機能を持たず、氏名・メールアドレス等の個人情報を収集しません。アクセス解析のためのCookie・ログを将来的に利用する場合は、本ページを更新してお知らせします。",
+    "contactTitle": "お問い合わせ",
+    "contactBody": "本ポリシーに関するお問い合わせはこちらのフォームからご連絡ください。",
+    "contactFormLabel": "お問い合わせフォームを開く →",
+    "contactUnavailable": "現在お問い合わせフォームを準備中です。"
+  },
+  "terms": {
+    "pageTitle": "利用規約",
+    "intro": "本サイト「今日ナニ遊ぶ？」(以下「本サイト」)のご利用にあたっては、以下の規約に同意いただいたものとみなします。",
+    "disclaimerTitle": "免責事項",
+    "disclaimerBody": "本サイトに掲載されているゲーム情報(価格・対応人数・プレイ時間の目安等)は、Steam公式APIから取得した情報、または運営者が独自に推定した参考値です。正確性・最新性を保証するものではなく、実際の購入・プレイ前には必ずSteamストアページにて内容をご確認ください。",
+    "unofficialTitle": "非公式サイトである旨",
+    "unofficialBody": "本サイトはValve Corporationならびに掲載されている各ゲームの権利者とは一切関係のない、非公式のファンサイトです。ゲームタイトル・画像等の著作権は各権利者に帰属します。",
+    "liabilityTitle": "免責",
+    "liabilityBody": "本サイトの利用によって生じたいかなる損害についても、運営者は責任を負いません。",
+    "changesTitle": "規約の変更",
+    "changesBody": "本規約は予告なく変更されることがあります。"
+  }
+}
