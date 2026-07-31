@@ -146,3 +146,29 @@ export function pickDailyTop5(filters: Filters, count = 5): Game[] {
 export function getGameByAppId(appid: number): Game | undefined {
   return GAMES.find((g) => g.appid === appid);
 }
+
+export type LandingFilters = {
+  moods?: MoodKey[]; // いずれか一つでも一致すればOK(OR条件)
+  players?: number;
+  minutes?: number;
+  budget?: BudgetKey;
+};
+
+// 特定の検索意図(「大学生向け」「カップル向け」等)向けの固定リストを作るための関数。
+// クイズの「今日のおすすめ」と違い、SEOページでは検索エンジンに同じ内容を安定して
+// 見せたいので日付でシャッフルしない。信頼できそうな順(レビュー件数が多い順)に並べる。
+export function pickForLanding(filters: LandingFilters, count = 8): Game[] {
+  const candidates = GAMES.filter((g) => {
+    if (filters.players === SOLO_PLAYERS && !g.coop.singlePlayer) return false;
+    if (filters.players && filters.players !== SOLO_PLAYERS && g.maxPlayers < filters.players) return false;
+    if (filters.moods && filters.moods.length > 0 && !g.moodTags.some((m) => filters.moods!.includes(m))) return false;
+    if (filters.minutes && g.estimatedSessionMinutes > filters.minutes) return false;
+    if (filters.budget === "free" && !g.isFree) return false;
+    if (filters.budget === "under2000" && !(g.isFree || (g.priceJpy ?? Infinity) <= 2000)) return false;
+    return true;
+  });
+
+  return [...candidates]
+    .sort((a, b) => (b.reviewStats?.totalReviews ?? 0) - (a.reviewStats?.totalReviews ?? 0))
+    .slice(0, count);
+}

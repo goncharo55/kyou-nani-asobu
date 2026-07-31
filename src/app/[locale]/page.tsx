@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MOOD_KEYS, moodEmoji } from "@/lib/moods";
 import { GAMES } from "@/lib/games";
+import { LANDING_PAGES } from "@/lib/landing-pages";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -42,7 +43,25 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           ))}
         </div>
         <p className="text-xs text-zinc-400">{t("home.gameCount", { count: GAMES.length })}</p>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
+          {LANDING_PAGES.map((p) => (
+            <LandingPill key={p.slug} slug={p.slug} />
+          ))}
+        </div>
       </section>
     </div>
+  );
+}
+
+async function LandingPill({ slug }: { slug: string }) {
+  const t = await getTranslations(`landing.${slug}`);
+  return (
+    <Link
+      href={`/for/${slug}`}
+      className="rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-sm text-zinc-700 transition hover:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300"
+    >
+      {t("title")}
+    </Link>
   );
 }

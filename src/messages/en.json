@@ -132,5 +132,38 @@
     "liabilityBody": "The operator is not liable for any damages arising from the use of this site.",
     "changesTitle": "Changes to these terms",
     "changesBody": "These terms may be changed without prior notice."
+  },
+  "landing": {
+    "hub": {
+      "pageTitle": "Browse by Occasion",
+      "intro": "Made \"what to play today\" more specific — curated Steam game picks for common situations."
+    },
+    "moreScenes": "More picks by occasion",
+    "quizCta": "Adjust the filters for more →",
+    "university-students": {
+      "title": "Best Party Games for College Friend Groups",
+      "lead": "Perfect for club hangouts or lazy afternoons with friends. A budget-friendly list of Steam games for groups of 3 or more.",
+      "metaDescription": "A curated list of affordable Steam party games for college friend groups of 3 or more."
+    },
+    "rainy-day-date": {
+      "title": "Rainy Day Date Night: Cozy 2-Player Steam Games",
+      "lead": "Stuck inside on a rainy day? Here's a list of relaxing, thoughtful co-op games perfect for two.",
+      "metaDescription": "Cozy and relaxing 2-player Steam games perfect for a rainy day date night in."
+    },
+    "indoor-with-friends": {
+      "title": "Indoor Games to Play With Friends",
+      "lead": "No need to go outside — here's a list of funny and spooky Steam games for groups of 3 or more to enjoy indoors.",
+      "metaDescription": "Steam games perfect for playing indoors with a group of friends — comedy and horror picks."
+    },
+    "two-people-bored": {
+      "title": "Bored With Just Two of You? Quick 2-Player Games",
+      "lead": "Got a bit of free time? Here's a list of short, easy-to-start 2-player Steam games.",
+      "metaDescription": "Quick, short-session 2-player Steam games perfect for when you're both bored."
+    },
+    "couple-ideas": {
+      "title": "Couple Game Night Ideas: 2-Player Steam Games",
+      "lead": "Mix up date night at home with these fun and cozy 2-player Steam games.",
+      "metaDescription": "2-player Steam game ideas perfect for couple game nights at home."
+    }
   }
 }
