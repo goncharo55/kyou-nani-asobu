@@ -7,3 +7,6 @@ export const CONTACT_FORM_URL: string | null =
 
 // Google Analytics 4 測定ID
 export const GA_MEASUREMENT_ID: string | null = "G-VSJ4504DN0";
+
+// Google Search Console 所有権確認用のメタタグ内容
+export const GOOGLE_SITE_VERIFICATION: string | null = "mOCouAXwG83dsYCgsqvVbzMhTcGzz-t3ZryLnoVI0Wo";

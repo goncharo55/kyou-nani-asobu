@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { buildAlternates } from "@/lib/alternates";
-import { GA_MEASUREMENT_ID } from "@/lib/site-config";
+import { GA_MEASUREMENT_ID, GOOGLE_SITE_VERIFICATION } from "@/lib/site-config";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import "../globals.css";
 
@@ -44,6 +44,7 @@ export async function generateMetadata({
     },
     description,
     alternates: buildAlternates(""),
+    ...(GOOGLE_SITE_VERIFICATION ? { verification: { google: GOOGLE_SITE_VERIFICATION } } : {}),
     openGraph: {
       type: "website",
       locale,
