@@ -1,5 +1,9 @@
 // サイト全体で使う設定値。連絡先など「後から差し替える前提」の値はここに集約する。
 
+// サイトの公開URL（末尾スラッシュなし）。sitemap・hreflang・canonical・構造化データの基準になる。
+// 独自ドメインに切り替えるときはここだけ変更する。
+export const SITE_URL = "https://kyou-nani-asobu.vercel.app";
+
 // お問い合わせ用Googleフォームの回答用URL。
 // 未設定のうちはAbout/Privacyページのお問い合わせリンクを無効化(プレースホルダ表示)しておく。
 export const CONTACT_FORM_URL: string | null =

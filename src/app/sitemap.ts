@@ -2,8 +2,9 @@ import type { MetadataRoute } from "next";
 import { GAMES } from "@/lib/games";
 import { routing } from "@/i18n/routing";
 import { LANDING_PAGES } from "@/lib/landing-pages";
+import { SITE_URL } from "@/lib/site-config";
 
-const BASE_URL = "https://example.com";
+const BASE_URL = SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [];

@@ -6,6 +6,7 @@ import GameCard from "@/components/GameCard";
 import { LANDING_PAGES, getLandingPage } from "@/lib/landing-pages";
 import { pickForLanding, localizedName } from "@/lib/games";
 import { buildAlternates } from "@/lib/alternates";
+import { SITE_URL } from "@/lib/site-config";
 
 export function generateStaticParams() {
   return LANDING_PAGES.map((p) => ({ slug: p.slug }));
@@ -50,7 +51,7 @@ export default async function LandingPage({
       "@type": "ListItem",
       position: i + 1,
       name: localizedName(g, locale),
-      url: `https://example.com/${locale}/games/${g.appid}`,
+      url: `${SITE_URL}/${locale}/games/${g.appid}`,
     })),
   };
 

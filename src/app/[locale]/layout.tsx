@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { buildAlternates } from "@/lib/alternates";
-import { GA_MEASUREMENT_ID, GOOGLE_SITE_VERIFICATION } from "@/lib/site-config";
+import { GA_MEASUREMENT_ID, GOOGLE_SITE_VERIFICATION, SITE_URL } from "@/lib/site-config";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import "../globals.css";
 
@@ -37,7 +37,7 @@ export async function generateMetadata({
   const description = t("description");
 
   return {
-    metadataBase: new URL("https://example.com"),
+    metadataBase: new URL(SITE_URL),
     title: {
       default: title,
       template: `%s｜${siteName}`,
